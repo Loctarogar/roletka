@@ -1,2 +1,25 @@
-body {
-  background-color: red; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+header {
+  grid-area: header;
+  background: green; }
+
+aside {
+  grid-area: aside;
+  background: greenyellow; }
+
+main {
+  grid-area: main;
+  background: grey; }
+
+footer {
+  grid-area: footer;
+  background: honeydew; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "header header header header header" "aside main main main main" "footer footer footer footer footer";
+  gap: 1rem; }
