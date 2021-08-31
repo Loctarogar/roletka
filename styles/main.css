@@ -19,8 +19,19 @@ footer {
   grid-area: footer;
   background: honeydew; }
 
+.container {
+  max-width: 1200px;
+  margin: auto; }
+
 .grid-container {
   display: grid;
   grid-template-areas: "header header header header header" "aside main main main main" "footer footer footer footer footer"; }
+  .grid-container header .header-advertising {
+    background: #f0d480;
+    text-align: center; }
   .grid-container header .header {
     color: white; }
+    .grid-container header .header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
