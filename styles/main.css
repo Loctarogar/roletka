@@ -5,7 +5,7 @@
 
 header {
   grid-area: header;
-  background: green; }
+  background: #221f1f; }
 
 aside {
   grid-area: aside;
@@ -21,5 +21,6 @@ footer {
 
 .grid-container {
   display: grid;
-  grid-template-areas: "header header header header header" "aside main main main main" "footer footer footer footer footer";
-  gap: 1rem; }
+  grid-template-areas: "header header header header header" "aside main main main main" "footer footer footer footer footer"; }
+  .grid-container header .header {
+    color: white; }
