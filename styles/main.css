@@ -1,13 +1,53 @@
+.btn {
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem; }
+
+.btn-catalog {
+  background: #4e4c4c;
+  color: #fbfbfb;
+  width: 7rem;
+  height: 2.5rem; }
+
+.btn-search {
+  background: #00a046;
+  color: #fbfbfb;
+  height: 2.5rem;
+  width: 5rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }
+
+.i-1x {
+  font-size: 1.5rem; }
+
+.active {
+  color: #e7e7e7; }
+
+.inactive {
+  color: #646363; }
+
 header .header-advertising {
   background: #f0d480;
+  font-size: 1.4rem;
+  font-weight: bold;
   text-align: center; }
 
 header .header {
   color: white; }
   header .header .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center; }
+    header .header .container .search-container {
+      display: flex; }
+      header .header .container .search-container input {
+        border: 0;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        width: 25rem;
+        height: 2.5rem; }
 
 * {
   box-sizing: border-box;
