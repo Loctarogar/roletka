@@ -10,14 +10,9 @@ header {
   height: 15vh; }
 
 aside {
-  background: greenyellow;
   height: 80vh; }
 
-main {
-  background: grey; }
-
 footer {
-  background: honeydew;
   grid-column-start: 1;
   grid-column-end: 3;
   height: 5vh; }
