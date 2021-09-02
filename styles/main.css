@@ -49,6 +49,22 @@ header .header {
         width: 25rem;
         height: 2.5rem; }
 
+aside {
+  border-right: 1px solid #adb8c8;
+  border-bottom: 1px solid #adb8c8; }
+  aside ul {
+    list-style: none;
+    padding: 2rem 0 2rem 2rem; }
+    aside ul li {
+      font-size: 0.9rem;
+      line-height: 2rem;
+      color: #6190b9; }
+    aside ul i {
+      text-align: center;
+      width: 3rem;
+      font-size: 1.2rem;
+      color: #adb8c8; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -61,9 +77,6 @@ header {
   grid-column-end: 3;
   height: 15vh; }
 
-aside {
-  height: 80vh; }
-
 footer {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -75,4 +88,4 @@ footer {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 3fr 8fr; }
+  grid-template-columns: 2fr 6fr; }
