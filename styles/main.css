@@ -75,12 +75,11 @@ header {
   background: #221f1f;
   grid-column-start: 1;
   grid-column-end: 3;
-  height: 15vh; }
+  height: 100px; }
 
 footer {
   grid-column-start: 1;
-  grid-column-end: 3;
-  height: 5vh; }
+  grid-column-end: 3; }
 
 .container {
   max-width: 1300px;
