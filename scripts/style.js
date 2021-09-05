@@ -19,13 +19,15 @@ function nextSlide() {
 
 function prevSlide() {
   classToggle();
-  currentSlider = currentSlider - 1;
-  classToggle();
+  if (carouselImages[currentSlider - 1]) {
+    currentSlider = currentSlider - 1;
+    classToggle();
+  }
+
   carouselBtnVisibility();
 }
 
 function classToggle() {
-  carouselImages[currentSlider].classList.toggle("current");
   carouselImages[currentSlider].classList.toggle("non-displayable");
 }
 
