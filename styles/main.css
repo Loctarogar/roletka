@@ -73,7 +73,8 @@ main .carousel-wrapper {
   height: 350px;
   margin: auto;
   margin-top: 2rem;
-  overflow: hidden; }
+  overflow: hidden;
+  box-shadow: 10px 0 5px #4e4c4c, -10px 0 5px #4e4c4c; }
   main .carousel-wrapper .carousel {
     position: relative;
     width: 100%;
@@ -82,19 +83,14 @@ main .carousel-wrapper {
       width: 100%;
       object-fit: center; }
     main .carousel-wrapper .carousel .btn_carousel {
-      text-align: center;
-      border-radius: 50%;
       position: absolute;
-      top: 45%;
-      background: white;
-      width: 2rem;
-      height: 2rem; }
+      top: 45%; }
       main .carousel-wrapper .carousel .btn_carousel i {
-        margin-top: 0.5rem; }
+        color: #fbfbfb; }
     main .carousel-wrapper .carousel .btn_carousel_prev {
-      left: 10px; }
+      left: 1px; }
     main .carousel-wrapper .carousel .btn_carousel_next {
-      right: 10px; }
+      right: 1px; }
 
 * {
   box-sizing: border-box;
