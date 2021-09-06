@@ -101,10 +101,21 @@ main .promotions-wrapper {
       width: 8rem;
       height: 1.5rem;
       border: 1px solid #adb8c8;
-      border-top: none;
-      color: #6190b9; }
+      border-top: none; }
+      main .promotions-wrapper #all-promotions-wrapper #all-promotions a:link,
+      main .promotions-wrapper #all-promotions-wrapper #all-promotions a:visited,
+      main .promotions-wrapper #all-promotions-wrapper #all-promotions a:hover,
+      main .promotions-wrapper #all-promotions-wrapper #all-promotions a:active {
+        color: #6190b9;
+        text-decoration: none; }
       main .promotions-wrapper #all-promotions-wrapper #all-promotions span {
         color: #646363; }
+
+main .container-products-main {
+  max-width: 90%;
+  margin: auto; }
+  main .container-products-main .products-by-category .sub-container {
+    display: flex; }
 
 * {
   box-sizing: border-box;
