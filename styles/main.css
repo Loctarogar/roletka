@@ -34,6 +34,8 @@
 .card {
   border-bottom: 1px solid #adb8c8;
   border-right: 1px solid #adb8c8; }
+  .card img {
+    max-height: 150px; }
 
 header .header-advertising {
   background: #f0d480;
