@@ -31,6 +31,10 @@
 .non-displayable {
   display: none; }
 
+.card {
+  border-bottom: 1px solid #adb8c8;
+  border-right: 1px solid #adb8c8; }
+
 header .header-advertising {
   background: #f0d480;
   font-size: 1.4rem;
@@ -53,8 +57,8 @@ header .header {
         height: 2.5rem; }
 
 aside {
-  border-right: 1px solid #adb8c8;
-  border-bottom: 1px solid #adb8c8; }
+  border-right: 1px solid #afd9ea;
+  border-bottom: 1px solid #afd9ea; }
   aside ul {
     list-style: none;
     padding: 2rem 0 2rem 2rem; }
@@ -75,7 +79,7 @@ main .promotions-wrapper {
     height: 350px;
     margin-top: 2rem;
     overflow: hidden;
-    box-shadow: 10px 0 5px #4e4c4c, -10px 0 5px #4e4c4c; }
+    box-shadow: 10px 0 5px #afd9ea, -10px 0 5px #4e4c4c; }
     main .promotions-wrapper .carousel-wrapper .carousel {
       position: relative;
       width: 100%;
@@ -100,7 +104,7 @@ main .promotions-wrapper {
       text-align: center;
       width: 8rem;
       height: 1.5rem;
-      border: 1px solid #adb8c8;
+      border: 1px solid #afd9ea;
       border-top: none; }
       main .promotions-wrapper #all-promotions-wrapper #all-promotions a:link,
       main .promotions-wrapper #all-promotions-wrapper #all-promotions a:visited,
