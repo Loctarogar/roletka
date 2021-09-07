@@ -1,6 +1,10 @@
 a {
   text-decoration: none; }
 
+.container {
+  width: 88%;
+  margin: auto; }
+
 .all-promotions-link {
   text-align: center;
   width: 100%;
@@ -70,6 +74,7 @@ header .header-advertising {
   text-align: center; }
 
 header .header {
+  width: 100%;
   color: white; }
   header .header .container {
     display: flex;
@@ -156,14 +161,7 @@ header {
   grid-column-end: 3;
   height: 100px; }
 
-footer {
-  grid-column-start: 1;
-  grid-column-end: 3; }
-
-.container {
-  max-width: 1300px;
-  margin: auto; }
-
 .grid-container {
   display: grid;
-  grid-template-columns: 2fr 6fr; }
+  grid-template-columns: 2fr 6fr;
+  gap: 0; }
