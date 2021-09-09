@@ -7,11 +7,13 @@ let currentSlider = 0;
 carouselBtnNext.addEventListener("click", nextSlide);
 carouselBtnPrev.addEventListener("click", prevSlide);
 
+function autoSlide() {}
+
 function nextSlide() {
   classToggle();
   if (carouselImages[currentSlider + 1]) {
     currentSlider = currentSlider + 1;
-    classToggle();
+    // classToggle();
   }
 
   carouselBtnVisibility();
@@ -21,7 +23,7 @@ function prevSlide() {
   classToggle();
   if (carouselImages[currentSlider - 1]) {
     currentSlider = currentSlider - 1;
-    classToggle();
+    // classToggle();
   }
 
   carouselBtnVisibility();
@@ -32,7 +34,6 @@ function classToggle() {
 }
 
 function carouselBtnVisibility() {
-  console.log(currentSlider);
   if (currentSlider <= 0) {
     carouselBtnPrev.classList.add("non-displayable");
   } else {
