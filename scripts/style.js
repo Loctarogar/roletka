@@ -98,3 +98,27 @@ function setInUse() {
     inUse = false;
   }, 700);
 }
+
+// auto slide
+function autoSlide() {
+  // true -> forward, false <- backward
+  let direction = true;
+  setInterval(function () {
+    if (direction && btnNext.classList.contains(nonDisplayable)) {
+      direction = false;
+    } else if (!direction && btnPrev.classList.contains(nonDisplayable)) {
+      direction = true;
+    }
+    if (!inUse) {
+      if (direction && !btnNext.classList.contains(nonDisplayable)) {
+        nextImg();
+      } else if (!direction && !btnPrev.classList.contains(nonDisplayable)) {
+        prevImg();
+      }
+
+      setInUse();
+    }
+  }, 4000);
+}
+
+autoSlide();
