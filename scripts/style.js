@@ -1,47 +1,98 @@
-const carouselBtnPrev = document.getElementById("btn_carousel_prev");
-const carouselBtnNext = document.getElementById("btn_carousel_next");
-const carouselImages = document.querySelectorAll(".carousel img");
+const imageList = document.querySelectorAll(".carousel_photo");
+const imageListLength = imageList.length - 1;
+const btnNext = document.querySelector(".btn_carousel_next");
+const btnPrev = document.querySelector(".btn_carousel_prev");
+// timer for carousel animation
+let inUse = false;
+// console.log(imageList);
 
-let currentSlider = 0;
+let activeSlider = 0;
+let prevSlider = imageListLength;
+let nextSlider = 1;
 
-carouselBtnNext.addEventListener("click", nextSlide);
-carouselBtnPrev.addEventListener("click", prevSlide);
+// vars for classes
+const prevImage = "carousel_photo_prev";
+const nextImage = "carousel_photo_next";
+const activeImage = "carousel_photo_active";
+const carouselPhoto = "carousel_photo";
 
-function autoSlide() {}
+// eventListeners
+btnNext.addEventListener("click", nextImg);
+btnPrev.addEventListener("click", prevImg);
 
-function nextSlide() {
-  classToggle();
-  if (carouselImages[currentSlider + 1]) {
-    currentSlider = currentSlider + 1;
-    // classToggle();
-  }
-
-  carouselBtnVisibility();
+// set initial classes
+function setInitialClasses() {
+  imageList[prevSlider].classList.add("carousel_photo_prev");
+  imageList[activeSlider].classList.add("carousel_photo_active");
+  imageList[nextSlider].classList.add("carousel_photo_next");
+  showHideButtons();
 }
 
-function prevSlide() {
-  classToggle();
-  if (carouselImages[currentSlider - 1]) {
-    currentSlider = currentSlider - 1;
-    // classToggle();
-  }
+// functions for eventListeners
+// next slider
+function nextImg() {
+  if (!inUse) {
+    activeSlider++;
+    console.log(`nextImg : ${activeSlider}`);
+    if (activeSlider < imageListLength) {
+      prevSlider = activeSlider - 1;
+      nextSlider = activeSlider + 1;
+    } else {
+      activeSlider = imageListLength;
+      prevSlider = imageListLength - 1;
+      nextSlider = 0;
+    }
 
-  carouselBtnVisibility();
+    setInUse();
+    setClasses();
+    showHideButtons();
+  }
 }
 
-function classToggle() {
-  carouselImages[currentSlider].classList.toggle("non-displayable");
+function prevImg() {
+  if (!inUse) {
+    activeSlider--;
+    console.log(`prevImg : ${activeSlider}`);
+    if (activeSlider > 0) {
+      nextSlider = activeSlider + 1;
+      prevSlider = activeSlider - 1;
+    } else {
+      activeSlider = 0;
+      nextSlider = activeSlider + 1;
+      prevSlider = imageListLength;
+    }
+
+    setInUse();
+    setClasses();
+    showHideButtons();
+  }
 }
 
-function carouselBtnVisibility() {
-  if (currentSlider <= 0) {
-    carouselBtnPrev.classList.add("non-displayable");
-  } else {
-    carouselBtnPrev.classList.remove("non-displayable");
+// set classes for images and buttons
+function setClasses() {
+  imageList[activeSlider].className = `${carouselPhoto} ${activeImage}`;
+  imageList[prevSlider].className = `${carouselPhoto} ${prevImage}`;
+  imageList[nextSlider].className = `${carouselPhoto} ${nextImage}`;
+}
+
+function showHideButtons() {
+  if (activeSlider == 0) {
+    btnPrev.classList.toggle("non-displayable");
+  } else if (btnPrev.classList.contains("non-displayable")) {
+    btnPrev.classList.toggle("non-displayable");
   }
-  if (currentSlider + 1 == carouselImages.length) {
-    carouselBtnNext.classList.add("non-displayable");
-  } else {
-    carouselBtnNext.classList.remove("non-displayable");
+
+  if (activeSlider == imageListLength) {
+    btnNext.classList.toggle("non-displayable");
+  } else if (btnNext.classList.contains("non-displayable")) {
+    btnNext.classList.toggle("non-displayable");
   }
+}
+
+// set in use for an animation time
+function setInUse() {
+  inUse = true;
+  setTimeout(function () {
+    inUse = false;
+  }, 700);
 }
