@@ -4,36 +4,35 @@ const btnNext = document.querySelector(".btn_carousel_next");
 const btnPrev = document.querySelector(".btn_carousel_prev");
 // timer for carousel animation
 let inUse = false;
-// console.log(imageList);
-
-let activeSlider = 1;
+// set default sliders positions
 let prevSlider = 0;
+let activeSlider = 1;
 let nextSlider = 2;
 
-// vars for classes
+// vars for css classes
 const prevImage = "carousel_photo_prev";
 const nextImage = "carousel_photo_next";
 const activeImage = "carousel_photo_active";
 const carouselPhoto = "carousel_photo";
+const nonDisplayable = "non-displayable";
 
-// eventListeners
+// set eventListeners
 btnNext.addEventListener("click", nextImg);
 btnPrev.addEventListener("click", prevImg);
 
 // set initial classes
 function setInitialClasses() {
-  imageList[prevSlider].classList.add("carousel_photo_prev");
-  imageList[activeSlider].classList.add("carousel_photo_active");
-  imageList[nextSlider].classList.add("carousel_photo_next");
+  imageList[prevSlider].classList.add(prevImage);
+  imageList[activeSlider].classList.add(activeImage);
+  imageList[nextSlider].classList.add(nextImage);
+
   showHideButtons();
 }
 
-// functions for eventListeners
-// next slider
+// show next slider
 function nextImg() {
   if (!inUse) {
     activeSlider++;
-    console.log(`nextImg : ${activeSlider}`);
     if (activeSlider < imageListLength) {
       prevSlider = activeSlider - 1;
       nextSlider = activeSlider + 1;
@@ -49,10 +48,10 @@ function nextImg() {
   }
 }
 
+// show previous slider
 function prevImg() {
   if (!inUse) {
     activeSlider--;
-    console.log(`prevImg : ${activeSlider}`);
     if (activeSlider > 1) {
       nextSlider = activeSlider + 1;
       prevSlider = activeSlider - 1;
@@ -75,17 +74,20 @@ function setClasses() {
   imageList[nextSlider].className = `${carouselPhoto} ${nextImage}`;
 }
 
+// show/hide carousel buttons
 function showHideButtons() {
+  // if it is first slide
   if (activeSlider == 1) {
-    btnPrev.classList.toggle("non-displayable");
-  } else if (btnPrev.classList.contains("non-displayable")) {
-    btnPrev.classList.toggle("non-displayable");
+    btnPrev.classList.toggle(nonDisplayable);
+  } else if (btnPrev.classList.contains(nonDisplayable)) {
+    btnPrev.classList.toggle(nonDisplayable);
   }
 
+  // if it is last slide
   if (activeSlider == imageListLength) {
-    btnNext.classList.toggle("non-displayable");
-  } else if (btnNext.classList.contains("non-displayable")) {
-    btnNext.classList.toggle("non-displayable");
+    btnNext.classList.toggle(nonDisplayable);
+  } else if (btnNext.classList.contains(nonDisplayable)) {
+    btnNext.classList.toggle(nonDisplayable);
   }
 }
 
