@@ -6,9 +6,9 @@ const btnPrev = document.querySelector(".btn_carousel_prev");
 let inUse = false;
 // console.log(imageList);
 
-let activeSlider = 0;
-let prevSlider = imageListLength;
-let nextSlider = 1;
+let activeSlider = 1;
+let prevSlider = 0;
+let nextSlider = 2;
 
 // vars for classes
 const prevImage = "carousel_photo_prev";
@@ -53,13 +53,13 @@ function prevImg() {
   if (!inUse) {
     activeSlider--;
     console.log(`prevImg : ${activeSlider}`);
-    if (activeSlider > 0) {
+    if (activeSlider > 1) {
       nextSlider = activeSlider + 1;
       prevSlider = activeSlider - 1;
     } else {
-      activeSlider = 0;
+      activeSlider = 1;
       nextSlider = activeSlider + 1;
-      prevSlider = imageListLength;
+      prevSlider = 0;
     }
 
     setInUse();
@@ -76,7 +76,7 @@ function setClasses() {
 }
 
 function showHideButtons() {
-  if (activeSlider == 0) {
+  if (activeSlider == 1) {
     btnPrev.classList.toggle("non-displayable");
   } else if (btnPrev.classList.contains("non-displayable")) {
     btnPrev.classList.toggle("non-displayable");
