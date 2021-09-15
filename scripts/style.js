@@ -121,4 +121,5 @@ function autoSlide() {
   }, 4000);
 }
 
+// start autosliding
 autoSlide();
