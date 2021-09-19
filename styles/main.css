@@ -95,9 +95,9 @@ header .header {
         height: 2.5rem; }
 
 aside {
-  border-right: 1px solid #afd9ea;
-  border-bottom: 1px solid #afd9ea; }
+  border-right: 1px solid #afd9ea; }
   aside ul {
+    border-bottom: 1px solid #afd9ea;
     list-style: none;
     padding: 2rem 0 2rem 0rem; }
     aside ul li {
