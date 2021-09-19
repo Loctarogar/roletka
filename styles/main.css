@@ -133,7 +133,7 @@ main .promotions-wrapper {
     height: 300px;
     overflow: hidden;
     border: none;
-    box-shadow: 10px 0 5px #afd9ea, -10px 0 5px #4e4c4c; }
+    box-shadow: 10px 0 5px #4e4c4c, -10px 0 5px #4e4c4c; }
     main .promotions-wrapper .carousel-wrapper .carousel {
       position: relative;
       width: 100%;
@@ -204,6 +204,14 @@ footer .footer-main-page {
     padding: 1rem 0;
     border-bottom: 1px solid #afd9ea; }
   footer .footer-main-page .login-to-personal-cabinet * {
+    margin: 0.5rem 0; }
+  footer .footer-main-page .our-adds {
+    border-bottom: 1px solid #afd9ea;
+    display: flex;
+    justify-content: center; }
+    footer .footer-main-page .our-adds p {
+      color: #4e4c4c; }
+  footer .footer-main-page .our-adds * {
     margin: 0.5rem 0; }
 
 * {
