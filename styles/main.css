@@ -41,6 +41,14 @@ a {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
 
+.btn-blue {
+  background-color: #3e77aa;
+  width: 100%;
+  color: #fbfbfb;
+  font-size: 0.9rem;
+  padding: 5px 0;
+  text-align: center; }
+
 .i-1x {
   font-size: 1.5rem; }
 
@@ -71,6 +79,9 @@ a {
   background-color: white;
   width: 100%;
   height: 100%; }
+
+.text-small {
+  font-size: 0.8rem; }
 
 header .header-advertising {
   background: #f0d480;
@@ -170,6 +181,16 @@ main .container-products-main {
   main .container-products-main .products-by-category > p {
     margin: 1rem 0 1rem 0; }
 
+footer .footer-main-page {
+  width: 90%; }
+  footer .footer-main-page .help-center {
+    color: #6190b9;
+    border-bottom: 1px solid #afd9ea; }
+    footer .footer-main-page .help-center i {
+      color: #adb8c8; }
+  footer .footer-main-page .login-to-personal-cabinet {
+    text-align: center; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -187,5 +208,5 @@ header {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 2fr 8fr;
+  grid-template-columns: 3fr 10fr;
   gap: 0; }
