@@ -83,6 +83,9 @@ a {
 .text-small {
   font-size: 0.8rem; }
 
+.width-90 {
+  width: 90%; }
+
 header .header-advertising {
   background: #f0d480;
   font-size: 1.4rem;
@@ -182,14 +185,26 @@ main .container-products-main {
     margin: 1rem 0 1rem 0; }
 
 footer .footer-main-page {
-  width: 90%; }
+  width: 100%; }
   footer .footer-main-page .help-center {
+    font-size: 0.9rem;
+    padding: 5px 0;
     color: #6190b9;
     border-bottom: 1px solid #afd9ea; }
     footer .footer-main-page .help-center i {
+      text-align: center;
+      width: 3rem;
+      font-size: 1.2rem;
       color: #adb8c8; }
   footer .footer-main-page .login-to-personal-cabinet {
-    text-align: center; }
+    display: flex;
+    justify-content: center;
+    background: #f4f4f4;
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #afd9ea; }
+  footer .footer-main-page .login-to-personal-cabinet * {
+    margin: 0.5rem 0; }
 
 * {
   box-sizing: border-box;
