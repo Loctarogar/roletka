@@ -208,11 +208,43 @@ footer .footer-main-page {
   footer .footer-main-page .our-adds {
     border-bottom: 1px solid #afd9ea;
     display: flex;
+    flex-direction: column;
     justify-content: center; }
     footer .footer-main-page .our-adds p {
       color: #4e4c4c; }
   footer .footer-main-page .our-adds * {
     margin: 0.5rem 0; }
+  footer .footer-main-page .social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    footer .footer-main-page .social-media p {
+      color: #4e4c4c; }
+    footer .footer-main-page .social-media .social-media-inner {
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      footer .footer-main-page .social-media .social-media-inner i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fbfbfb;
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+        border-radius: 50%; }
+      footer .footer-main-page .social-media .social-media-inner .facebook {
+        background: rgba(80, 96, 152, 0.9); }
+      footer .footer-main-page .social-media .social-media-inner .twitter {
+        background: rgba(118, 201, 253, 0.9); }
+      footer .footer-main-page .social-media .social-media-inner .youtube {
+        background: rgba(233, 0, 0, 0.9); }
+      footer .footer-main-page .social-media .social-media-inner .instagram {
+        background: linear-gradient(45deg, rgba(255, 183, 0, 0.9) 14.65%, rgba(255, 104, 0, 0.9) 31.68%, rgba(203, 33, 125, 0.9) 54.72%, rgba(126, 0, 170, 0.9) 85.35%); }
+      footer .footer-main-page .social-media .social-media-inner .viber {
+        background: rgba(125, 61, 175, 0.9); }
+      footer .footer-main-page .social-media .social-media-inner .telegram {
+        background: rgba(0, 136, 204, 0.9); }
 
 * {
   box-sizing: border-box;
