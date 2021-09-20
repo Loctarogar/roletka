@@ -270,19 +270,18 @@ footer .footer-main-page {
   font-family: "Noto Sans", sans-serif; }
 
 body {
-  z-index: 100;
   position: relative; }
 
 header {
-  position: relative; }
+  z-index: 100;
+  width: 100%;
+  position: relative;
+  height: 100px; }
   header .header {
     background: #221f1f;
-    width: 100%;
-    height: 100px;
     position: fixed; }
 
 .grid-container {
-  padding-top: 100px;
   display: grid;
   grid-template-columns: 3fr 10fr;
   gap: 0; }
