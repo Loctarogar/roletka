@@ -215,11 +215,14 @@ footer .footer-main-page {
   footer .footer-main-page .our-adds * {
     margin: 0.5rem 0; }
   footer .footer-main-page .social-media {
+    padding: 1.5rem 0;
     display: flex;
     flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    border-bottom: 1px solid #afd9ea; }
     footer .footer-main-page .social-media p {
-      color: #4e4c4c; }
+      color: #4e4c4c;
+      padding-bottom: 1rem; }
     footer .footer-main-page .social-media .social-media-inner {
       display: flex;
       justify-content: space-around;
@@ -245,6 +248,20 @@ footer .footer-main-page {
         background: rgba(125, 61, 175, 0.9); }
       footer .footer-main-page .social-media .social-media-inner .telegram {
         background: rgba(0, 136, 204, 0.9); }
+  footer .footer-main-page .footer-partners {
+    border-bottom: 1px solid #afd9ea; }
+  footer .footer-main-page .payment-logo {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0; }
+    footer .footer-main-page .payment-logo img {
+      height: 30px;
+      width: 110px; }
+  footer .footer-main-page .legal-rights {
+    display: flex;
+    justify-content: center; }
+    footer .footer-main-page .legal-rights * {
+      padding-top: 1rem; }
 
 * {
   box-sizing: border-box;
