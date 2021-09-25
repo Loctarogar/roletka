@@ -163,7 +163,8 @@ aside {
   top: 0;
   left: 0;
   height: 2300px;
-  border-right: 1px solid #afd9ea; }
+  border-right: 1px solid #afd9ea;
+  padding-left: 0.5rem; }
   aside ul {
     border-bottom: 1px solid #afd9ea;
     list-style: none;
@@ -171,7 +172,7 @@ aside {
     aside ul li {
       font-size: 0.9rem;
       line-height: 2rem;
-      color: #6190b9; }
+      color: #3e77aa; }
     aside ul i {
       text-align: center;
       width: 3rem;
