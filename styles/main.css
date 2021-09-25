@@ -86,29 +86,39 @@ a {
 .width-90 {
   width: 90%; }
 
-header .header-advertising {
-  background: #f0d480;
-  font-size: 1.4rem;
-  font-weight: bold;
-  text-align: center; }
-
-header .header {
+header {
+  z-index: 100;
   width: 100%;
-  color: white; }
-  header .header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    header .header .container .search-container {
-      display: flex; }
-      header .header .container .search-container input {
-        border: 0;
-        border-bottom-left-radius: 5px;
-        border-top-left-radius: 5px;
-        width: 25rem;
-        height: 2.5rem; }
+  position: relative;
+  height: 100px; }
+  header .header-advertising {
+    background: #f0d480;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center; }
+  header .header {
+    background: #221f1f;
+    position: fixed;
+    width: 100%;
+    color: white; }
+    header .header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      header .header .container .search-container {
+        display: flex; }
+        header .header .container .search-container input {
+          border: 0;
+          border-bottom-left-radius: 5px;
+          border-top-left-radius: 5px;
+          width: 25rem;
+          height: 2.5rem; }
 
 aside {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 2300px;
   border-right: 1px solid #afd9ea; }
   aside ul {
     border-bottom: 1px solid #afd9ea;
@@ -272,16 +282,8 @@ footer .footer-main-page {
 body {
   position: relative; }
 
-header {
-  z-index: 100;
-  width: 100%;
-  position: relative;
-  height: 100px; }
-  header .header {
-    background: #221f1f;
-    position: fixed; }
-
 .grid-container {
+  position: relative;
   display: grid;
   grid-template-columns: 3fr 10fr;
   gap: 0; }
