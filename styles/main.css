@@ -205,13 +205,13 @@ main .promotions-wrapper {
         overflow: hidden; }
       main .promotions-wrapper .carousel-wrapper .carousel .carousel_photo_active {
         left: 0;
-        transition: left 0.7s; }
+        transition: left 1.5s; }
       main .promotions-wrapper .carousel-wrapper .carousel .carousel_photo_prev {
         left: -100%;
-        transition: left 0.7s; }
+        transition: left 1.5s; }
       main .promotions-wrapper .carousel-wrapper .carousel .carousel_photo_next {
         left: 100%;
-        transition: left 0.7s; }
+        transition: left 1.5s; }
       main .promotions-wrapper .carousel-wrapper .carousel img {
         width: 100%;
         height: 100%; }

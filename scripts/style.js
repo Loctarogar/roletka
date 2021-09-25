@@ -118,7 +118,7 @@ function autoSlide() {
 
       setInUse();
     }
-  }, 4000);
+  }, 5000);
 }
 
 // start autosliding
