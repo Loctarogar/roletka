@@ -69,16 +69,36 @@ a {
 .card {
   border-bottom: 1px solid rgba(175, 217, 234, 0.5);
   border-right: 1px solid rgba(175, 217, 234, 0.5);
-  display: grid;
-  grid-template-rows: 3fr 2fr; }
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem; }
+  .card .heart-icon {
+    text-align: right;
+    height: 20px; }
+    .card .heart-icon i {
+      color: #ffa900;
+      font-size: 1.5rem;
+      cursor: pointer; }
   .card .image-container {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    height: 150px; }
     .card .image-container img {
-      max-height: 150px; }
-  .card .text-container {
-    text-align: center; }
+      max-height: 150px;
+      cursor: pointer; }
+  .card .goods-name {
+    cursor: pointer; }
+  .card .goods-prev-price {
+    height: 13px;
+    margin: 0.5rem 0;
+    text-decoration: line-through;
+    color: #646363; }
+  .card .goods-current-price {
+    font-size: 1.4rem;
+    bottom: 0; }
+  .card .goods-status {
+    color: #646363; }
 
 .blank_card {
   background-color: white;
@@ -93,6 +113,9 @@ a {
 
 .text-white {
   color: white; }
+
+.text-red {
+  color: #f7350e; }
 
 .width-90 {
   width: 90%; }
