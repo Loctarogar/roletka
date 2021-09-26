@@ -57,7 +57,11 @@ a {
   color: #fbfbfb;
   font-size: 0.9rem;
   padding: 5px 0;
-  text-align: center; }
+  text-align: center;
+  transition: all 0.5s; }
+
+.btn-blue:hover {
+  background: #27b4f5; }
 
 .btn-premium {
   background: #471a7b;
@@ -211,6 +215,10 @@ aside {
       font-size: 0.9rem;
       line-height: 2rem;
       color: #3e77aa; }
+    aside .sidebar-list li:hover {
+      cursor: pointer;
+      color: #f7350e;
+      text-decoration: underline; }
     aside .sidebar-list i {
       text-align: center;
       width: 3rem;
@@ -286,15 +294,22 @@ footer .footer-main-page {
     list-style: none;
     color: #3e77aa;
     line-height: 1.8; }
+  footer .footer-main-page .footer-list li:hover {
+    cursor: pointer;
+    color: #f7350e;
+    text-decoration: underline; }
   footer .footer-main-page .help-center {
     font-size: 0.9rem;
     padding: 5px 0;
-    color: #3e77aa; }
+    color: #3e77aa;
+    cursor: pointer; }
     footer .footer-main-page .help-center i {
       text-align: center;
       width: 3rem;
       font-size: 1.2rem;
       color: #adb8c8; }
+  footer .footer-main-page .help-center:hover {
+    color: #f7350e; }
   footer .footer-main-page .login-to-personal-cabinet {
     display: flex;
     justify-content: center;
@@ -309,6 +324,8 @@ footer .footer-main-page {
     justify-content: center; }
     footer .footer-main-page .our-adds p {
       color: #4e4c4c; }
+    footer .footer-main-page .our-adds img {
+      cursor: pointer; }
   footer .footer-main-page .our-adds * {
     margin: 0.5rem 0; }
   footer .footer-main-page .social-media {
@@ -331,26 +348,46 @@ footer .footer-main-page {
         width: 40px;
         height: 40px;
         font-size: 1.2rem;
-        border-radius: 50%; }
+        border-radius: 50%;
+        cursor: pointer; }
       footer .footer-main-page .social-media .social-media-inner .facebook {
-        background: rgba(80, 96, 152, 0.9); }
+        background: rgba(80, 96, 152, 0.9);
+        transition: all 0.3s; }
+      footer .footer-main-page .social-media .social-media-inner .facebook:hover {
+        background: #506098; }
       footer .footer-main-page .social-media .social-media-inner .twitter {
-        background: rgba(118, 201, 253, 0.9); }
+        background: rgba(118, 201, 253, 0.9);
+        transition: all 0.3s; }
+      footer .footer-main-page .social-media .social-media-inner .twitter:hover {
+        background: #76c9fd; }
       footer .footer-main-page .social-media .social-media-inner .youtube {
-        background: rgba(233, 0, 0, 0.9); }
+        background: rgba(233, 0, 0, 0.9);
+        transition: all 0.3s; }
+      footer .footer-main-page .social-media .social-media-inner .youtube:hover {
+        background: #e90000; }
       footer .footer-main-page .social-media .social-media-inner .instagram {
-        background: linear-gradient(45deg, rgba(255, 183, 0, 0.9) 14.65%, rgba(255, 104, 0, 0.9) 31.68%, rgba(203, 33, 125, 0.9) 54.72%, rgba(126, 0, 170, 0.9) 85.35%); }
+        background: linear-gradient(45deg, rgba(255, 183, 0, 0.9) 14.65%, rgba(255, 104, 0, 0.9) 31.68%, rgba(203, 33, 125, 0.9) 54.72%, rgba(126, 0, 170, 0.9) 85.35%);
+        transition: all 0.3s; }
+      footer .footer-main-page .social-media .social-media-inner .instagram:hover {
+        background: linear-gradient(45deg, #ffb700 14.65%, #ff6800 31.68%, #cb217d 54.72%, #7e00aa 85.35%); }
       footer .footer-main-page .social-media .social-media-inner .viber {
+        transition: all 0.3s;
         background: rgba(125, 61, 175, 0.9); }
+      footer .footer-main-page .social-media .social-media-inner .viber:hover {
+        background: #7d3daf; }
       footer .footer-main-page .social-media .social-media-inner .telegram {
+        transition: all 0.3s;
         background: rgba(0, 136, 204, 0.9); }
+      footer .footer-main-page .social-media .social-media-inner .telegram:hover {
+        background: #0088cc; }
   footer .footer-main-page .payment-logo {
     display: flex;
     justify-content: center;
     padding: 2rem 0; }
     footer .footer-main-page .payment-logo img {
       height: 30px;
-      width: 110px; }
+      width: 110px;
+      cursor: pointer; }
   footer .footer-main-page .legal-rights {
     display: flex;
     justify-content: center; }
