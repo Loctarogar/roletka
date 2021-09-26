@@ -20,12 +20,14 @@ a {
   .all-promotions-link a:active {
     color: #6190b9;
     text-decoration: none; }
-  .all-promotions-link a:hover {
-    color: #f7350e; }
   .all-promotions-link span {
     color: #646363; }
   .all-promotions-link i {
     color: #adb8c8; }
+
+.all-promotions-link:hover i,
+.all-promotions-link:hover a {
+  color: #f7350e; }
 
 .btn {
   border: none;
