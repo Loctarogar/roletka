@@ -394,15 +394,27 @@ footer .footer-main-page {
     footer .footer-main-page .legal-rights * {
       padding-top: 1rem; }
 
+.underlay-for-hamburger-menu {
+  z-index: 150;
+  position: absolute;
+  background: rgba(1, 3, 8, 0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
+  transition: all 3s ease 3s; }
+
 .hamburger-menu {
   position: absolute;
   z-index: 200;
   height: 100vh;
   width: 300px;
-  content: "";
+  background: #fbfbfb;
   overflow: scroll;
   top: 0;
-  left: 0; }
+  left: -350px;
+  transition: all 1s; }
 
 * {
   box-sizing: border-box;
