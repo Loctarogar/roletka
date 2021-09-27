@@ -3,6 +3,7 @@ const ham_menu_btn = document.querySelector(".btn-show-hide-menu");
 const underlay_for_ham_menu = document.querySelector(
   ".underlay-for-hamburger-menu"
 );
+const closeMenu = document.querySelector(".close-menu");
 const body = document.querySelector("body");
 
 // event listeners
@@ -11,6 +12,10 @@ ham_menu_btn.addEventListener("click", () => {
 });
 
 underlay_for_ham_menu.addEventListener("click", () => {
+  hideMenu();
+});
+
+closeMenu.addEventListener("click", () => {
   hideMenu();
 });
 

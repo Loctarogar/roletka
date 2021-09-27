@@ -409,12 +409,85 @@ footer .footer-main-page {
   position: absolute;
   z-index: 200;
   height: 100vh;
-  width: 300px;
+  width: 320px;
   background: #fbfbfb;
   overflow: scroll;
   top: 0;
   left: -350px;
   transition: all 1s; }
+  .hamburger-menu .hamburger-container {
+    display: flex;
+    flex-direction: column; }
+    .hamburger-menu .hamburger-container .logo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 10px 10px 16px;
+      background: #221f1f;
+      color: #fbfbfb;
+      height: 60px; }
+      .hamburger-menu .hamburger-container .logo .roletka-logo-pic {
+        height: 24px;
+        cursor: pointer; }
+      .hamburger-menu .hamburger-container .logo .roletka-logo-text {
+        cursor: pointer;
+        height: 16px;
+        margin: 0 0 4px 10px; }
+      .hamburger-menu .hamburger-container .logo i {
+        cursor: pointer;
+        float: left; }
+    .hamburger-menu .hamburger-container .user-login {
+      background: #221f1f;
+      color: #fbfbfb;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 10px 10px 16px; }
+      .hamburger-menu .hamburger-container .user-login .icon {
+        background: #4e4c4c;
+        padding: 0.5rem;
+        border-radius: 50%; }
+        .hamburger-menu .hamburger-container .user-login .icon i {
+          font-size: 1.5rem; }
+      .hamburger-menu .hamburger-container .user-login .text {
+        padding-left: 15px; }
+      .hamburger-menu .hamburger-container .user-login .text p:first-child {
+        cursor: pointer; }
+      .hamburger-menu .hamburger-container .user-login .text p:last-child {
+        color: #646363; }
+    .hamburger-menu .hamburger-container .hamburger-menu-premium {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #471a7b;
+      padding: 10px 10px 10px 16px;
+      cursor: pointer; }
+      .hamburger-menu .hamburger-container .hamburger-menu-premium i {
+        color: #fbfbfb; }
+    .hamburger-menu .hamburger-container .hamburger-menu-premium p:first-child {
+      color: #fbfbfb; }
+    .hamburger-menu .hamburger-container .hamburger-menu-premium p:last-child {
+      color: #ffa900; }
+    .hamburger-menu .hamburger-container .hamburger-menu-catalog {
+      display: flex;
+      padding: 16px; }
+      .hamburger-menu .hamburger-container .hamburger-menu-catalog i {
+        margin-right: 16px; }
+    .hamburger-menu .hamburger-container .hamburger-menu-cart {
+      display: flex;
+      padding: 16px; }
+      .hamburger-menu .hamburger-container .hamburger-menu-cart i {
+        margin-right: 16px; }
+    .hamburger-menu .hamburger-container .hamburger-menu-help-center {
+      display: flex;
+      padding: 16px; }
+      .hamburger-menu .hamburger-container .hamburger-menu-help-center i {
+        margin-right: 16px; }
+    .hamburger-menu .hamburger-container .hamburger-menu-phone {
+      display: flex;
+      padding: 16px; }
+      .hamburger-menu .hamburger-container .hamburger-menu-phone i {
+        margin-right: 16px; }
 
 * {
   box-sizing: border-box;
