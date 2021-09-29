@@ -427,6 +427,19 @@ footer .footer-main-page {
   top: 0;
   left: -350px;
   transition: all 1s; }
+  .hamburger-menu .ham-menu-all-lists {
+    padding-left: 16px; }
+    .hamburger-menu .ham-menu-all-lists p {
+      color: #4e4c4c; }
+  .hamburger-menu .ham-menu-element-margin {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .hamburger-menu .ham-menu-list {
+    list-style: none;
+    line-height: 1.8; }
+  .hamburger-menu .ham-menu-list li:hover {
+    cursor: pointer;
+    text-decoration: underline; }
   .hamburger-menu .hamburger-container {
     display: flex;
     flex-direction: column; }
