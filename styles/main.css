@@ -442,6 +442,13 @@ footer .footer-main-page {
     text-decoration: underline; }
   .hamburger-menu .ham-dropdown-hiden {
     max-height: 0 !important; }
+  .hamburger-menu .name-shevron-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 16px; }
+  .hamburger-menu .rotate-180 {
+    transform: rotate(-180deg); }
   .hamburger-menu .hamburger-container {
     display: flex;
     flex-direction: column; }
@@ -540,14 +547,18 @@ footer .footer-main-page {
         justify-content: space-between;
         align-items: center;
         width: 60px; }
+    .hamburger-menu .hamburger-container .ham-menu-services i {
+      transition: transform 0.5s; }
     .hamburger-menu .hamburger-container .ham-menu-services ul {
       max-height: 170px;
       overflow: hidden;
-      transition: max-height 1s; }
+      transition: max-height 0.7s; }
+    .hamburger-menu .hamburger-container .ham-menu-partners i {
+      transition: transform 0.5s; }
     .hamburger-menu .hamburger-container .ham-menu-partners ul {
       max-height: 170px;
       overflow: hidden;
-      transition: max-height 1s; }
+      transition: max-height 0.7s; }
 
 * {
   box-sizing: border-box;
