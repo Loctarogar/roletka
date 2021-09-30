@@ -31,3 +31,17 @@ function hideMenu() {
   underlay_for_ham_menu.classList.toggle("non-displayable");
   body.style.overflow = "visible";
 }
+
+// dropdown menu
+const services = document.querySelector(".ham-menu-services > p");
+const servicesMenu = document.querySelector(".ham-menu-services > ul");
+
+const partners = document.querySelector(".ham-menu-partners > p");
+const partnersMenu = document.querySelector(".ham-menu-partners > ul");
+
+services.addEventListener("click", () => toggleClass(servicesMenu));
+partners.addEventListener("click", () => toggleClass(partnersMenu));
+
+function toggleClass(elem) {
+  elem.classList.toggle("ham-dropdown-hiden");
+}

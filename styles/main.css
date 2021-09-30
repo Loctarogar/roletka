@@ -440,6 +440,8 @@ footer .footer-main-page {
   .hamburger-menu .ham-menu-list li:hover {
     cursor: pointer;
     text-decoration: underline; }
+  .hamburger-menu .ham-dropdown-hiden {
+    max-height: 0 !important; }
   .hamburger-menu .hamburger-container {
     display: flex;
     flex-direction: column; }
@@ -538,6 +540,14 @@ footer .footer-main-page {
         justify-content: space-between;
         align-items: center;
         width: 60px; }
+    .hamburger-menu .hamburger-container .ham-menu-services ul {
+      max-height: 170px;
+      overflow: hidden;
+      transition: max-height 1s; }
+    .hamburger-menu .hamburger-container .ham-menu-partners ul {
+      max-height: 170px;
+      overflow: hidden;
+      transition: max-height 1s; }
 
 * {
   box-sizing: border-box;
