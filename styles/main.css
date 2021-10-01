@@ -414,12 +414,12 @@ footer .footer-main-page {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: scroll;
   transition: all 3s ease 3s; }
 
 .hamburger-menu {
-  position: absolute;
+  position: fixed;
   z-index: 200;
   height: 100vh;
   width: 320px;
