@@ -42,6 +42,7 @@ a {
   height: 43px; }
 
 .btn-search {
+  cursor: pointer;
   background: #00a046;
   color: #fbfbfb;
   height: 43px;
@@ -224,14 +225,18 @@ header {
       display: flex;
       align-items: center; }
       header .header .container .btn-show-hide-menu {
+        cursor: pointer;
         margin-left: 15px; }
-      header .header .container .roletka-logo-pic {
-        margin-left: 15px;
-        height: 50px; }
-      header .header .container .roletka-logo-text {
-        margin-left: 15px;
-        height: 35px; }
+      header .header .container .roletka-logo {
+        cursor: pointer; }
+        header .header .container .roletka-logo .roletka-logo-pic {
+          margin-left: 15px;
+          height: 50px; }
+        header .header .container .roletka-logo .roletka-logo-text {
+          margin-left: 15px;
+          height: 35px; }
       header .header .container .btn-catalog {
+        cursor: pointer;
         margin-left: 20px;
         display: flex;
         align-items: center; }
@@ -257,12 +262,17 @@ header {
           border: none; }
       header .header .container .language-container {
         margin-left: 30px; }
+        header .header .container .language-container span {
+          cursor: pointer; }
       header .header .container .premium-container {
+        cursor: pointer;
         text-align: center;
         margin-left: 30px; }
       header .header .container .user {
+        cursor: pointer;
         margin-left: 30px; }
       header .header .container .cart {
+        cursor: pointer;
         margin-left: 30px; }
 
 aside {
