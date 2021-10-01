@@ -33,13 +33,8 @@ function hideMenu() {
 }
 
 // dropdown menu
-// const services = document.querySelector(".ham-menu-services > div");
-// const servicesMenu = document.querySelector(".ham-menu-services > ul");
 const hamServices = document.querySelector(".ham-menu-services");
 const hamPartners = document.querySelector(".ham-menu-partners");
-
-// const partners = document.querySelector(".ham-menu-partners > div");
-// const partnersMenu = document.querySelector(".ham-menu-partners > ul");
 
 hamServices.addEventListener("click", () => toggleClass(hamServices));
 hamPartners.addEventListener("click", () => toggleClass(hamPartners));
@@ -49,9 +44,4 @@ function toggleClass(elem) {
   const i = elem.querySelector("i");
   ul.classList.toggle("ham-dropdown-hiden");
   i.classList.toggle("rotate-180");
-  console.log(i);
-
-  // elem.classList.toggle("ham-dropdown-hiden");
-  // let i = elem.querySelector("i");
-  // console.log(i);
 }

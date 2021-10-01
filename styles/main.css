@@ -148,6 +148,59 @@ a {
 .border-bottom {
   border-bottom: 1px solid #afd9ea; }
 
+.social-media {
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .social-media p {
+    color: #4e4c4c;
+    padding-bottom: 1rem; }
+  .social-media .social-media-inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .social-media .social-media-inner i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fbfbfb;
+      width: 40px;
+      height: 40px;
+      font-size: 1.2rem;
+      border-radius: 50%;
+      cursor: pointer; }
+    .social-media .social-media-inner .facebook {
+      background: rgba(80, 96, 152, 0.9);
+      transition: all 0.3s; }
+    .social-media .social-media-inner .facebook:hover {
+      background: #506098; }
+    .social-media .social-media-inner .twitter {
+      background: rgba(118, 201, 253, 0.9);
+      transition: all 0.3s; }
+    .social-media .social-media-inner .twitter:hover {
+      background: #76c9fd; }
+    .social-media .social-media-inner .youtube {
+      background: rgba(233, 0, 0, 0.9);
+      transition: all 0.3s; }
+    .social-media .social-media-inner .youtube:hover {
+      background: #e90000; }
+    .social-media .social-media-inner .instagram {
+      background: linear-gradient(45deg, rgba(255, 183, 0, 0.9) 14.65%, rgba(255, 104, 0, 0.9) 31.68%, rgba(203, 33, 125, 0.9) 54.72%, rgba(126, 0, 170, 0.9) 85.35%);
+      transition: all 0.3s; }
+    .social-media .social-media-inner .instagram:hover {
+      background: linear-gradient(45deg, #ffb700 14.65%, #ff6800 31.68%, #cb217d 54.72%, #7e00aa 85.35%); }
+    .social-media .social-media-inner .viber {
+      transition: all 0.3s;
+      background: rgba(125, 61, 175, 0.9); }
+    .social-media .social-media-inner .viber:hover {
+      background: #7d3daf; }
+    .social-media .social-media-inner .telegram {
+      transition: all 0.3s;
+      background: rgba(0, 136, 204, 0.9); }
+    .social-media .social-media-inner .telegram:hover {
+      background: #0088cc; }
+
 header {
   z-index: 100;
   width: 100%;
@@ -340,58 +393,6 @@ footer .footer-main-page {
       cursor: pointer; }
   footer .footer-main-page .our-adds * {
     margin: 0.5rem 0; }
-  footer .footer-main-page .social-media {
-    padding: 1.5rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    footer .footer-main-page .social-media p {
-      color: #4e4c4c;
-      padding-bottom: 1rem; }
-    footer .footer-main-page .social-media .social-media-inner {
-      display: flex;
-      justify-content: space-around;
-      align-items: center; }
-      footer .footer-main-page .social-media .social-media-inner i {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #fbfbfb;
-        width: 40px;
-        height: 40px;
-        font-size: 1.2rem;
-        border-radius: 50%;
-        cursor: pointer; }
-      footer .footer-main-page .social-media .social-media-inner .facebook {
-        background: rgba(80, 96, 152, 0.9);
-        transition: all 0.3s; }
-      footer .footer-main-page .social-media .social-media-inner .facebook:hover {
-        background: #506098; }
-      footer .footer-main-page .social-media .social-media-inner .twitter {
-        background: rgba(118, 201, 253, 0.9);
-        transition: all 0.3s; }
-      footer .footer-main-page .social-media .social-media-inner .twitter:hover {
-        background: #76c9fd; }
-      footer .footer-main-page .social-media .social-media-inner .youtube {
-        background: rgba(233, 0, 0, 0.9);
-        transition: all 0.3s; }
-      footer .footer-main-page .social-media .social-media-inner .youtube:hover {
-        background: #e90000; }
-      footer .footer-main-page .social-media .social-media-inner .instagram {
-        background: linear-gradient(45deg, rgba(255, 183, 0, 0.9) 14.65%, rgba(255, 104, 0, 0.9) 31.68%, rgba(203, 33, 125, 0.9) 54.72%, rgba(126, 0, 170, 0.9) 85.35%);
-        transition: all 0.3s; }
-      footer .footer-main-page .social-media .social-media-inner .instagram:hover {
-        background: linear-gradient(45deg, #ffb700 14.65%, #ff6800 31.68%, #cb217d 54.72%, #7e00aa 85.35%); }
-      footer .footer-main-page .social-media .social-media-inner .viber {
-        transition: all 0.3s;
-        background: rgba(125, 61, 175, 0.9); }
-      footer .footer-main-page .social-media .social-media-inner .viber:hover {
-        background: #7d3daf; }
-      footer .footer-main-page .social-media .social-media-inner .telegram {
-        transition: all 0.3s;
-        background: rgba(0, 136, 204, 0.9); }
-      footer .footer-main-page .social-media .social-media-inner .telegram:hover {
-        background: #0088cc; }
   footer .footer-main-page .payment-logo {
     display: flex;
     justify-content: center;
@@ -559,6 +560,17 @@ footer .footer-main-page {
       max-height: 170px;
       overflow: hidden;
       transition: max-height 0.7s; }
+    .hamburger-menu .hamburger-container .ham-our-adds {
+      padding: 14px 0; }
+      .hamburger-menu .hamburger-container .ham-our-adds img {
+        width: 110px;
+        padding: 10px; }
+    .hamburger-menu .hamburger-container .social-media .social-media-inner {
+      justify-content: left; }
+    .hamburger-menu .hamburger-container .social-media i {
+      margin-right: 10px;
+      width: 30px;
+      height: 30px; }
 
 * {
   box-sizing: border-box;
