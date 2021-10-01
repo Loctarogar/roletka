@@ -36,8 +36,12 @@ function hideMenu() {
 const hamServices = document.querySelector(".ham-menu-services");
 const hamPartners = document.querySelector(".ham-menu-partners");
 
-hamServices.addEventListener("click", () => toggleClass(hamServices));
-hamPartners.addEventListener("click", () => toggleClass(hamPartners));
+hamServices
+  .querySelector("i")
+  .addEventListener("click", () => toggleClass(hamServices));
+hamPartners
+  .querySelector("i")
+  .addEventListener("click", () => toggleClass(hamPartners));
 
 function toggleClass(elem) {
   const ul = elem.querySelector("ul");

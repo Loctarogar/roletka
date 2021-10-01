@@ -549,12 +549,14 @@ footer .footer-main-page {
         align-items: center;
         width: 60px; }
     .hamburger-menu .hamburger-container .ham-menu-services i {
+      cursor: pointer;
       transition: transform 0.5s; }
     .hamburger-menu .hamburger-container .ham-menu-services ul {
       max-height: 170px;
       overflow: hidden;
       transition: max-height 0.7s; }
     .hamburger-menu .hamburger-container .ham-menu-partners i {
+      cursor: pointer;
       transition: transform 0.5s; }
     .hamburger-menu .hamburger-container .ham-menu-partners ul {
       max-height: 170px;
