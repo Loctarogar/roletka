@@ -202,6 +202,24 @@ a {
     .social-media .social-media-inner .telegram:hover {
       background: #0088cc; }
 
+.sidebar-list {
+  border-bottom: 1px solid #afd9ea;
+  list-style: none;
+  padding: 2rem 0 2rem 0rem; }
+  .sidebar-list li {
+    font-size: 0.9rem;
+    line-height: 2rem;
+    color: #3e77aa; }
+  .sidebar-list li:hover {
+    cursor: pointer;
+    color: #f7350e;
+    text-decoration: underline; }
+  .sidebar-list i {
+    text-align: center;
+    width: 3rem;
+    font-size: 1.2rem;
+    color: #adb8c8; }
+
 header {
   z-index: 100;
   width: 100%;
@@ -282,23 +300,6 @@ aside {
   height: 1970px;
   border-right: 1px solid #afd9ea;
   padding-left: 0.5rem; }
-  aside .sidebar-list {
-    border-bottom: 1px solid #afd9ea;
-    list-style: none;
-    padding: 2rem 0 2rem 0rem; }
-    aside .sidebar-list li {
-      font-size: 0.9rem;
-      line-height: 2rem;
-      color: #3e77aa; }
-    aside .sidebar-list li:hover {
-      cursor: pointer;
-      color: #f7350e;
-      text-decoration: underline; }
-    aside .sidebar-list i {
-      text-align: center;
-      width: 3rem;
-      font-size: 1.2rem;
-      color: #adb8c8; }
 
 main .promotions-wrapper {
   width: 90%;
