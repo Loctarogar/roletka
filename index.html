@@ -453,7 +453,9 @@
         </div>
         <div class="header">
           <div class="container">
-            <i class="fas fa-bars fa-2x btn-show-hide-menu"></i>
+            <div class="header-icon-container">
+              <i class="fas fa-bars fa-2x btn-show-hide-menu"></i>
+            </div>
             <div class="roletka-logo">
               <img
                 class="roletka-logo-pic"
@@ -471,17 +473,20 @@
               <i class="fas fa-shapes i-1x"></i> Каталог
             </button>
             <div class="search-container">
-              <i class="fas fa-search"></i>
-              <input
-                class="text-small"
-                type="text"
-                placeholder="    Я шукаю..."
-              />
+              <div class="input-container">
+                <i class="fas fa-search"></i>
+                <input
+                  class="text-small"
+                  type="text"
+                  placeholder="    Я шукаю..."
+                />
+              </div>
+              <button class="btn btn-search">Знайти</button>
             </div>
-            <button class="btn btn-search">Знайти</button>
             <div class="language-container">
-              <span>UA</span> <span class="inactive">|</span>
-              <span class="inactive">EN</span>
+              <span class="language-active">UA</span>
+              <span class="inactive">|</span>
+              <span class="language-inactive inactive">EN</span>
             </div>
             <div class="premium-container">
               <div class="text-small">Спробуйте</div>
@@ -490,8 +495,12 @@
                 PREMIUM
               </button>
             </div>
-            <div class="user"><i class="far fa-user"></i></div>
-            <div class="cart"><i class="fas fa-shopping-cart"></i></div>
+            <div class="user header-icon-container">
+              <i class="far fa-user"></i>
+            </div>
+            <div class="cart header-icon-container">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
           </div>
         </div>
       </div>
