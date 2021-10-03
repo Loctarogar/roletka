@@ -215,6 +215,7 @@ a {
     color: #f7350e;
     text-decoration: underline; }
   .sidebar-list i {
+    text-decoration: none;
     text-align: center;
     width: 3rem;
     font-size: 1.2rem;
@@ -584,6 +585,34 @@ footer .footer-main-page {
       margin-right: 10px;
       width: 30px;
       height: 30px; }
+
+.catalogue-menu {
+  z-index: 400;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  top: 104px;
+  left: 180px;
+  width: 1530px;
+  height: 650px;
+  overflow: hidden;
+  border-radius: 7px;
+  background: #fbfbfb;
+  border: 1px solid #3e77aa; }
+  .catalogue-menu ul {
+    list-style: none; }
+    .catalogue-menu ul li {
+      font-size: 0.9rem;
+      color: #4e4c4c; }
+  .catalogue-menu p {
+    color: #3e77aa; }
+  .catalogue-menu .catalogue-column .sidebar-list {
+    border: none;
+    padding: 1rem; }
+    .catalogue-menu .catalogue-column .sidebar-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
 
 * {
   box-sizing: border-box;
