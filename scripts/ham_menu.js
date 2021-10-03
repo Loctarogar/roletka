@@ -49,3 +49,30 @@ function toggleClass(elem) {
   ul.classList.toggle("ham-dropdown-hiden");
   i.classList.toggle("rotate-180");
 }
+
+// catalogue menu
+const catalogueBtn = document.querySelector(".btn-catalog");
+const catalogueMenu = document.querySelector(".catalogue-menu");
+const underlayForMenu = document.querySelector(".underlay-for-hamburger-menu");
+
+catalogueBtn.addEventListener("click", showCatalogue);
+underlayForMenu.addEventListener("click", hideCatalogue);
+
+// !!! toggle does not work idk why
+// catalogueBtn.addEventListener("click", handleCatalogue);
+// underlayForMenu.addEventListener("click", handleCatalogue);
+
+function showCatalogue() {
+  catalogueMenu.classList.remove("non-displayable");
+  underlay_for_ham_menu.classList.remove("non-displayable");
+}
+
+function hideCatalogue() {
+  catalogueMenu.classList.add("non-displayable");
+  underlay_for_ham_menu.classList.add("non-displayable");
+}
+
+// function handleCatalogue() {
+//   underlay_for_ham_menu.classList.toggle("non-displayable");
+//   catalogueMenu.classList.toggle("non-displayable");
+// }
