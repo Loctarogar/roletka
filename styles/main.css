@@ -589,8 +589,8 @@ footer .footer-main-page {
 .catalogue-menu {
   z-index: 400;
   position: fixed;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
   top: 104px;
   left: 180px;
   width: 1530px;
@@ -603,6 +603,10 @@ footer .footer-main-page {
     .catalogue-menu ul li {
       font-size: 0.9rem;
       color: #4e4c4c; }
+    .catalogue-menu ul li:hover {
+      cursor: pointer;
+      color: #f7350e;
+      text-decoration: underline; }
   .catalogue-menu p {
     color: #3e77aa; }
   .catalogue-menu .catalogue-column .sidebar-list {
@@ -612,6 +616,11 @@ footer .footer-main-page {
       display: flex;
       justify-content: space-between;
       align-items: center; }
+  .catalogue-menu .first-set,
+  .catalogue-menu .second-set {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
   .catalogue-menu .first-sub-column {
     padding: 1rem 0 1rem 0rem; }
   .catalogue-menu .second-sub-column {
