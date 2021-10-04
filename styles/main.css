@@ -515,24 +515,24 @@ footer .footer-main-page {
       .hamburger-menu .hamburger-container .logo i {
         cursor: pointer;
         float: left; }
-    .hamburger-menu .hamburger-container .user-login {
+    .hamburger-menu .hamburger-container .ham-user-login {
       background: #221f1f;
       color: #fbfbfb;
       display: flex;
       justify-content: space-around;
       align-items: center;
       padding: 10px 10px 10px 16px; }
-      .hamburger-menu .hamburger-container .user-login .icon {
+      .hamburger-menu .hamburger-container .ham-user-login .icon {
         background: #4e4c4c;
         padding: 0.5rem;
         border-radius: 50%; }
-        .hamburger-menu .hamburger-container .user-login .icon i {
+        .hamburger-menu .hamburger-container .ham-user-login .icon i {
           font-size: 1.5rem; }
-      .hamburger-menu .hamburger-container .user-login .text {
+      .hamburger-menu .hamburger-container .ham-user-login .text {
         padding-left: 15px; }
-      .hamburger-menu .hamburger-container .user-login .text p:first-child {
+      .hamburger-menu .hamburger-container .ham-user-login .text p:first-child {
         cursor: pointer; }
-      .hamburger-menu .hamburger-container .user-login .text p:last-child {
+      .hamburger-menu .hamburger-container .ham-user-login .text p:last-child {
         color: #646363; }
     .hamburger-menu .hamburger-container .hamburger-menu-premium {
       display: flex;
@@ -653,6 +653,23 @@ footer .footer-main-page {
     padding: 1rem 0 1rem 0rem; }
   .catalogue-menu .photo-column {
     padding: 1rem 0 1rem 0rem; }
+
+.user-login-container {
+  z-index: 150;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.user-login {
+  z-index: 150;
+  position: fixed;
+  width: 650px;
+  height: 370px;
+  background: #f4f4f4;
+  border-radius: 5px; }
 
 * {
   box-sizing: border-box;
