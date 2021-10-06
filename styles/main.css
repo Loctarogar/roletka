@@ -675,16 +675,10 @@ footer .footer-main-page {
   .catalogue-menu .photo-column {
     padding: 1rem 0 1rem 0rem; }
 
-.user-login-container {
-  z-index: 150;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
 .user-login {
+  top: 30%;
+  left: 35%;
+  position: fixed;
   z-index: 150;
   width: 650px;
   height: 370px;
