@@ -84,16 +84,12 @@ const catalogueCategories = document.querySelectorAll(
 const firstCatalogueSet = document.querySelector(".first-set");
 const secondCatalogueSet = document.querySelector(".second-set");
 
-console.log(firstCatalogueSet);
-console.log(secondCatalogueSet);
-
 function setCatalogueEL() {
   for (item of catalogueCategories) {
     item.addEventListener("mouseover", () => {
       firstCatalogueSet.classList.toggle("non-displayable");
       secondCatalogueSet.classList.toggle("non-displayable");
     });
-    // console.log(item);
   }
 }
 setCatalogueEL();
