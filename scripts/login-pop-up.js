@@ -6,12 +6,11 @@ userLoginIcon.addEventListener("click", showMenu);
 // functions
 function showMenu() {
   userLogin.classList.toggle("non-displayable");
-  underlay_for_ham_menu.classList.toggle("non-displayable");
+  underlayForMenu.classList.toggle("non-displayable");
   body.style.overflow = "hidden";
 }
 
 function hideMenu() {
   userLogin.classList.toggle("non-displayable");
-  underlay_for_ham_menu.classList.toggle("non-displayable");
   body.style.overflow = "visible";
 }

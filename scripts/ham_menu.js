@@ -1,17 +1,16 @@
-const ham_menu = document.querySelector(".hamburger-menu");
-const ham_menu_btn = document.querySelector(".btn-show-hide-menu");
-const underlay_for_ham_menu = document.querySelector(
-  ".underlay-for-hamburger-menu"
-);
+// Hamburger menu
+const hamMenu = document.querySelector(".hamburger-menu");
+const hamMenuBtn = document.querySelector(".btn-show-hide-menu");
+const underlayForMenu = document.querySelector(".underlay-for-hamburger-menu");
 const closeMenu = document.querySelector(".close-menu");
 const body = document.querySelector("body");
 
 // event listeners
-ham_menu_btn.addEventListener("click", () => {
+hamMenuBtn.addEventListener("click", () => {
   showMenu();
 });
 
-underlay_for_ham_menu.addEventListener("click", () => {
+underlayForMenu.addEventListener("click", () => {
   hideMenu();
 });
 
@@ -21,14 +20,14 @@ closeMenu.addEventListener("click", () => {
 
 // functions
 function showMenu() {
-  ham_menu.style.left = 0;
-  underlay_for_ham_menu.classList.toggle("non-displayable");
+  hamMenu.style.left = 0;
+  underlayForMenu.classList.toggle("non-displayable");
   body.style.overflow = "hidden";
 }
 
 function hideMenu() {
-  ham_menu.style.left = "-350px";
-  underlay_for_ham_menu.classList.toggle("non-displayable");
+  hamMenu.style.left = "-350px";
+  underlayForMenu.classList.toggle("non-displayable");
   body.style.overflow = "visible";
 }
 
@@ -50,32 +49,24 @@ function toggleClass(elem) {
   i.classList.toggle("rotate-180");
 }
 
-// catalogue menu
+//
+//
+// Catalogue menu
 const catalogueBtn = document.querySelector(".btn-catalog");
 const catalogueMenu = document.querySelector(".catalogue-menu");
-const underlayForMenu = document.querySelector(".underlay-for-hamburger-menu");
 
 catalogueBtn.addEventListener("click", showCatalogue);
 underlayForMenu.addEventListener("click", hideCatalogue);
 
-// !!! toggle does not work idk why
-// catalogueBtn.addEventListener("click", handleCatalogue);
-// underlayForMenu.addEventListener("click", handleCatalogue);
-
 function showCatalogue() {
   catalogueMenu.classList.remove("non-displayable");
-  underlay_for_ham_menu.classList.remove("non-displayable");
+  underlayForMenu.classList.remove("non-displayable");
 }
 
 function hideCatalogue() {
   catalogueMenu.classList.add("non-displayable");
-  underlay_for_ham_menu.classList.add("non-displayable");
+  underlayForMenu.classList.add("non-displayable");
 }
-
-// function handleCatalogue() {
-//   underlay_for_ham_menu.classList.toggle("non-displayable");
-//   catalogueMenu.classList.toggle("non-displayable");
-// }
 
 // change subcolumns in catologue
 const catalogueCategories = document.querySelectorAll(
