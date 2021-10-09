@@ -1,34 +1,40 @@
+// Close all menues
+const underlayForMenu = document.querySelector(".underlay-for-menu");
+underlayForMenu.addEventListener("click", () => {
+  hideAllMenus();
+});
+
+function hideAllMenus() {
+  if (hamMenu.style.left == "0px") {
+    hamMenu.style.left = "-350px";
+  }
+  underlayForMenu.classList.add("non-displayable");
+  userLogin.classList.add("non-displayable");
+  catalogueMenu.classList.add("non-displayable");
+  body.style.overflow = "visible";
+  cart.classList.add("non-displayable");
+}
+
 // Hamburger menu
 const hamMenu = document.querySelector(".hamburger-menu");
 const hamMenuBtn = document.querySelector(".btn-show-hide-menu");
-const underlayForMenu = document.querySelector(".underlay-for-hamburger-menu");
 const closeMenu = document.querySelector(".close-menu");
 const body = document.querySelector("body");
 
 // event listeners
 hamMenuBtn.addEventListener("click", () => {
-  showMenu();
-});
-
-underlayForMenu.addEventListener("click", () => {
-  hideMenu();
+  showHamMenu();
 });
 
 closeMenu.addEventListener("click", () => {
-  hideMenu();
+  hideHamMenu();
 });
 
 // functions
-function showMenu() {
+function showHamMenu() {
   hamMenu.style.left = 0;
-  underlayForMenu.classList.toggle("non-displayable");
+  underlayForMenu.classList.remove("non-displayable");
   body.style.overflow = "hidden";
-}
-
-function hideMenu() {
-  hamMenu.style.left = "-350px";
-  underlayForMenu.classList.toggle("non-displayable");
-  body.style.overflow = "visible";
 }
 
 // dropdown menu
@@ -56,16 +62,10 @@ const catalogueBtn = document.querySelector(".btn-catalog");
 const catalogueMenu = document.querySelector(".catalogue-menu");
 
 catalogueBtn.addEventListener("click", showCatalogue);
-underlayForMenu.addEventListener("click", hideCatalogue);
 
 function showCatalogue() {
   catalogueMenu.classList.remove("non-displayable");
   underlayForMenu.classList.remove("non-displayable");
-}
-
-function hideCatalogue() {
-  catalogueMenu.classList.add("non-displayable");
-  underlayForMenu.classList.add("non-displayable");
 }
 
 // change subcolumns in catologue
@@ -83,4 +83,20 @@ function setCatalogueEL() {
     });
   }
 }
+
 setCatalogueEL();
+
+//
+//
+// Login pop-up window
+const userLoginIcon = document.querySelector(".user.header-icon-container");
+const userLogin = document.querySelector(".user-login");
+
+userLoginIcon.addEventListener("click", showLoginMenu);
+
+// functions
+function showLoginMenu() {
+  userLogin.classList.remove("non-displayable");
+  underlayForMenu.classList.remove("non-displayable");
+  body.style.overflow = "hidden";
+}

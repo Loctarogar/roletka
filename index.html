@@ -20,15 +20,15 @@
       referrerpolicy="no-referrer"
     />
     <script src="scripts/carousel.js" defer></script>
-    <script src="scripts/ham_menu.js" defer></script>
-    <script src="scripts/login-pop-up.js" defer></script>
+    <script src="scripts/menus.js" defer></script>
+    <script src="scripts/cart.js" defer></script>
     <title>
       Інтернет-магазин ROLETKA™: офіційний сайт найпопулярнішого
       онлайн-гіпермаркету в Україні
     </title>
   </head>
   <body>
-    <div class="underlay-for-hamburger-menu non-displayable"></div>
+    <div class="underlay-for-menu non-displayable"></div>
 
     <div class="catalogue-menu non-displayable">
       <div class="catalogue-column">
@@ -309,7 +309,97 @@
         </div>
       </div>
     </div>
-    <!-- <div class="user-login-container non-displayable"> -->
+    <div class="cart-pop-up non-displayable">
+      <div class="cart-top">
+        <h2>Кошик</h2>
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="cart-items">
+        
+        <img src="img/cart.png" alt="">
+        <div class="text">
+          <h2>Кошик порожній</h2>
+          <p class="text-small">Але це ніколи не пізно виправити :)</p>
+        </div>
+      </div>
+      <div class="viewed">
+        <div class="sub-container">
+          <div class="card">
+            <div class="heart-icon">
+              <i class="far fa-heart"></i>
+            </div>
+            <div class="image-container">
+              <img src="img/index/more-goods/1.jpg" alt="" />
+            </div>
+            <p class="goods-name">Lorem ipsum dolor sit amet.</p>
+            <p class="goods-prev-price text-small">155 ₴</p>
+            <p class="goods-current-price text-red">183 ₴</p>
+            <p class="goods-status text-small">Немає в наявності</p>
+          </div>
+          <div class="card">
+            <div class="heart-icon">
+              <i class="far fa-heart"></i>
+            </div>
+            <div class="image-container">
+              <img src="img/index/more-goods/2.jpg" alt="" />
+            </div>
+            <p class="goods-name">Lorem ipsum dolor sit amet.</p>
+            <p class="goods-prev-price text-small">155 ₴</p>
+            <p class="goods-current-price text-red">183 ₴</p>
+            <p class="goods-status text-small"></p>
+          </div>
+          <div class="card">
+            <div class="heart-icon">
+              <i class="far fa-heart"></i>
+            </div>
+            <div class="image-container">
+              <img src="img/index/more-goods/3.jpg" alt="" />
+            </div>
+            <p class="goods-name">Lorem ipsum dolor sit amet.</p>
+            <p class="goods-prev-price text-small"></p>
+            <p class="goods-current-price">183 ₴</p>
+            <p class="goods-status text-small">Немає в наявності</p>
+          </div>
+          <div class="card">
+            <div class="heart-icon">
+              <i class="far fa-heart"></i>
+            </div>
+            <div class="image-container">
+              <img src="img/index/more-goods/4.jpg" alt="" />
+            </div>
+            <p class="goods-name">Lorem ipsum dolor sit amet.</p>
+            <p class="goods-prev-price text-small"></p>
+            <p class="goods-current-price">183 ₴</p>
+            <p class="goods-status text-small"></p>
+          </div>
+          <div class="card">
+            <div class="heart-icon">
+              <i class="far fa-heart"></i>
+            </div>
+            <div class="image-container">
+              <img src="img/index/more-goods/5.jpg" alt="" />
+            </div>
+            <p class="goods-name">Lorem ipsum dolor sit amet.</p>
+            <p class="goods-prev-price text-small">155 ₴</p>
+            <p class="goods-current-price">183 ₴</p>
+            <p class="goods-status text-small"></p>
+          </div>
+          <div class="card">
+            <div class="heart-icon">
+              <i class="far fa-heart"></i>
+            </div>
+            <div class="image-container">
+              <img src="img/index/more-goods/6.jpg" alt="" />
+            </div>
+            <p class="goods-name">Lorem ipsum dolor sit amet.</p>
+            <p class="goods-prev-price text-small"></p>
+            <p class="goods-current-price text-red">183 ₴</p>
+            <p class="goods-status text-small"></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
     <div class="user-login non-displayable">
       <div class="user-login-top">
         <h2>Вхід</h2>
@@ -359,8 +449,6 @@
         </div>
       </div>
     </div>
-    <!-- </div> -->
-
     <div class="hamburger-menu">
       <div class="hamburger-container">
         <div class="logo">
@@ -544,7 +632,6 @@
             </div>
             <div class="premium-container">
               <div class="text-small">Спробуйте</div>
-              <!-- <div>PREMIUM</div> -->
               <button class="btn btn-premium text-small text-white">
                 PREMIUM
               </button>
