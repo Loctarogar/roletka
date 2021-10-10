@@ -2,8 +2,10 @@ const imageList = document.querySelectorAll(".carousel_photo");
 const imageListLength = imageList.length - 1;
 const btnNext = document.querySelector(".btn_carousel_next");
 const btnPrev = document.querySelector(".btn_carousel_prev");
+
 // timer for carousel animation
 let inUse = false;
+
 // set default sliders positions
 let prevSlider = 0;
 let activeSlider = 1;

@@ -791,6 +791,42 @@ footer .footer-main-page {
     justify-content: space-between; }
     .cart-pop-up .cart-items img {
       height: 70%; }
+  .cart-pop-up .viewed .cart-carousel {
+    position: relative; }
+    .cart-pop-up .viewed .cart-carousel .btn_cart_carousel {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      cursor: pointer;
+      top: 45%;
+      left: 2%; }
+    .cart-pop-up .viewed .cart-carousel .btn_cart_carousel_next {
+      left: 98%; }
+    .cart-pop-up .viewed .cart-carousel .viewed-sub-container {
+      display: flex;
+      flex-direction: row; }
+  .cart-pop-up .viewed .cart-carousel-dots-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .cart-pop-up .viewed .cart-carousel-dots-menu .dot-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 24px;
+      height: 24px;
+      margin: 12px 6px; }
+      .cart-pop-up .viewed .cart-carousel-dots-menu .dot-container .dot {
+        width: 10px;
+        height: 10px;
+        background: #afd9ea;
+        border-radius: 50%; }
+      .cart-pop-up .viewed .cart-carousel-dots-menu .dot-container .dot:hover {
+        background: #4e4c4c; }
+      .cart-pop-up .viewed .cart-carousel-dots-menu .dot-container .dot-active {
+        width: 16px;
+        height: 16px;
+        background: #00a046; }
 
 * {
   box-sizing: border-box;
