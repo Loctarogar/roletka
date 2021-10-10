@@ -47,4 +47,22 @@ function nextCartCarouselSubContainer() {
   }
 }
 
-function prevCartCarouselSubContainer() {}
+function prevCartCarouselSubContainer() {
+  let currentCartSubContainer = document.querySelector(
+    ".viewed-sub-container.current-cart-sub-container"
+  );
+
+  for (i = allCartCarouselSubContainers.length - 1; i >= 0; i--) {
+    if (allCartCarouselSubContainers[i] == currentCartSubContainer) {
+      if (i - 1 >= 0) {
+        let nextCartSubContainer = allCartCarouselSubContainers[i - 1];
+        currentCartSubContainer.classList.remove("current-cart-sub-container");
+        currentCartSubContainer.classList.add("non-displayable");
+        nextCartSubContainer.classList.remove("non-displayable");
+        nextCartSubContainer.classList.add("current-cart-sub-container");
+      } else {
+        btnCartCarouselPrev.classList.add("non-displayable");
+      }
+    }
+  }
+}
