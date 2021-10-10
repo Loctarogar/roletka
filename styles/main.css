@@ -849,3 +849,12 @@ body {
   display: grid;
   grid-template-columns: 3fr 12fr;
   gap: 0; }
+
+@media (max-width: 1366px) {
+  .container {
+    width: 1280px;
+    margin: auto; }
+  .grid-container {
+    grid-template-columns: 4fr 12fr; }
+  header .header .container .search-container .input-container {
+    width: 400px; } }
