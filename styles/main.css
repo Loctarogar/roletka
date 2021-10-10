@@ -89,14 +89,16 @@ a {
   font-size: 0.9rem;
   padding: 5px 0;
   text-align: center;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  cursor: pointer; }
 
 .btn-blue:hover {
   background: #27b4f5; }
 
 .btn-premium {
   background: #471a7b;
-  width: 100%; }
+  width: 100%;
+  cursor: pointer; }
 
 .btn-language {
   height: 38px;
@@ -363,10 +365,14 @@ header {
         header .header .container .language-container span {
           cursor: pointer; }
       header .header .container .premium-container {
+        cursor: pointer;
         text-align: center;
-        margin-left: 30px; }
-        header .header .container .premium-container * {
-          cursor: pointer; }
+        margin-left: 30px;
+        padding: 8px;
+        border-radius: 5px;
+        transition: all 0.3s; }
+      header .header .container .premium-container:hover {
+        background: #4e4c4c; }
       header .header .container .user {
         cursor: pointer; }
       header .header .container .cart {
@@ -397,7 +403,8 @@ main .promotions-wrapper {
       main .promotions-wrapper .carousel-wrapper .carousel .carousel_photo {
         position: absolute;
         left: 100%;
-        overflow: hidden; }
+        overflow: hidden;
+        cursor: pointer; }
       main .promotions-wrapper .carousel-wrapper .carousel .carousel_photo_active {
         left: 0;
         transition: left 1.5s; }
