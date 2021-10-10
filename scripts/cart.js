@@ -20,12 +20,11 @@ const btnCartCarouselNext = document.querySelector("#btn_cart_carousel_next");
 const allCartCarouselSubContainers = document.querySelectorAll(
   ".viewed-sub-container"
 );
-const currentCartSubContainer = document.querySelector(
-  ".viewed-sub-container.current-cart-sub-container"
-);
+const closeCart = document.querySelector(".cart-close");
 
 btnCartCarouselPrev.addEventListener("click", prevCartCarouselSubContainer);
 btnCartCarouselNext.addEventListener("click", nextCartCarouselSubContainer);
+closeCart.addEventListener("click", hideAllMenus);
 
 changeButtonVisibility(0);
 
