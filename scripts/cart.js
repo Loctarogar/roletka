@@ -23,6 +23,7 @@ const allCartCarouselSubContainers = document.querySelectorAll(
 const currentCartSubContainer = document.querySelector(
   ".viewed-sub-container.current-cart-sub-container"
 );
+const allCartCarouselDots = document.querySelectorAll(".dot");
 
 btnCartCarouselPrev.addEventListener("click", prevCartCarouselSubContainer);
 btnCartCarouselNext.addEventListener("click", nextCartCarouselSubContainer);
@@ -31,8 +32,6 @@ changeButtonVisibility(0);
 
 function nextCartCarouselSubContainer() {
   let currentCartSubContainer = getCurrentCartSubContainer();
-
-  console.log("in next");
   for (i = 0; i < allCartCarouselSubContainers.length; i++) {
     if (allCartCarouselSubContainers[i] == currentCartSubContainer) {
       if (i + 1 < allCartCarouselSubContainers.length) {
@@ -43,12 +42,12 @@ function nextCartCarouselSubContainer() {
         );
       }
       changeButtonVisibility(i + 1);
+      changeDot(i, 1);
     }
   }
 }
 
 function prevCartCarouselSubContainer() {
-  console.log("in prev");
   let currentCartSubContainer = getCurrentCartSubContainer();
 
   for (i = allCartCarouselSubContainers.length - 1; i >= 0; i--) {
@@ -61,6 +60,7 @@ function prevCartCarouselSubContainer() {
         );
       }
       changeButtonVisibility(i - 1);
+      changeDot(i, -1);
     }
   }
 }
@@ -82,7 +82,6 @@ function changeCartSubContainerClasses(
 }
 
 function changeButtonVisibility(i) {
-  console.log("in change buton - " + i);
   if (i >= allCartCarouselSubContainers.length - 1) {
     btnCartCarouselNext.classList.add("non-displayable");
   } else {
@@ -94,4 +93,10 @@ function changeButtonVisibility(i) {
   } else {
     btnCartCarouselPrev.classList.remove("non-displayable");
   }
+}
+
+function changeDot(i, num) {
+  let currentCartCarouselDot = document.querySelector(".dot-active");
+  currentCartCarouselDot.classList.remove("dot-active");
+  allCartCarouselDots[i + num].classList.add("dot-active");
 }
