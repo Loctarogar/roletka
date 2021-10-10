@@ -842,7 +842,8 @@ footer .footer-main-page {
   font-family: "Noto Sans", sans-serif; }
 
 body {
-  position: relative; }
+  position: relative;
+  overflow: auto; }
 
 .grid-container {
   position: relative;
@@ -858,3 +859,18 @@ body {
     grid-template-columns: 4fr 12fr; }
   header .header .container .search-container .input-container {
     width: 400px; } }
+
+@media (max-width: 1024px) {
+  .container {
+    width: 1000px; }
+  .grid-container {
+    grid-template-columns: 1fr; }
+  header .roletka-logo-text {
+    display: none; }
+  header .header .container .search-container .input-container {
+    width: 300px; }
+  aside {
+    display: none; }
+  main .promotions-wrapper {
+    width: 90%;
+    margin: 1rem auto; } }
