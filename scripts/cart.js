@@ -23,7 +23,6 @@ const allCartCarouselSubContainers = document.querySelectorAll(
 const currentCartSubContainer = document.querySelector(
   ".viewed-sub-container.current-cart-sub-container"
 );
-const allCartCarouselDots = document.querySelectorAll(".dot");
 
 btnCartCarouselPrev.addEventListener("click", prevCartCarouselSubContainer);
 btnCartCarouselNext.addEventListener("click", nextCartCarouselSubContainer);
@@ -65,6 +64,13 @@ function prevCartCarouselSubContainer() {
   }
 }
 
+function changeCartCarouselSubContainer(i) {
+  let currentCartSubContainer = getCurrentCartSubContainer();
+  let nextCartSubContainer = allCartCarouselSubContainers[i];
+  changeCartSubContainerClasses(currentCartSubContainer, nextCartSubContainer);
+  changeButtonVisibility(i);
+}
+
 function getCurrentCartSubContainer() {
   return document.querySelector(
     ".viewed-sub-container.current-cart-sub-container"
@@ -92,6 +98,22 @@ function changeButtonVisibility(i) {
     btnCartCarouselPrev.classList.add("non-displayable");
   } else {
     btnCartCarouselPrev.classList.remove("non-displayable");
+  }
+}
+
+// Active dot
+const allCartCarouselDots = document.querySelectorAll(".dot");
+
+allCartCarouselDots.forEach((element) => {
+  element.addEventListener("click", () => changeDotOnClick(element));
+});
+
+function changeDotOnClick(elem) {
+  for (i = 0; i < allCartCarouselDots.length; i++) {
+    if (allCartCarouselDots[i] == elem) {
+      changeDot(i, 0);
+      changeCartCarouselSubContainer(i);
+    }
   }
 }
 
