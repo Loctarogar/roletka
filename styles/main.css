@@ -52,6 +52,120 @@ a {
 .all-promotions-link:hover a {
   color: #f7350e; }
 
+.card {
+  border-bottom: 1px solid rgba(175, 217, 234, 0.5);
+  border-right: 1px solid rgba(175, 217, 234, 0.5);
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem; }
+  .card .heart-icon {
+    text-align: right;
+    height: 20px; }
+    .card .heart-icon i {
+      color: #ffa900;
+      font-size: 1.5rem;
+      cursor: pointer; }
+  .card .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px; }
+    .card .image-container img {
+      max-height: 150px;
+      cursor: pointer; }
+  .card .goods-name {
+    cursor: pointer; }
+  .card .goods-prev-price {
+    height: 13px;
+    margin: 0.5rem 0;
+    text-decoration: line-through;
+    color: #646363; }
+  .card .goods-current-price {
+    font-size: 1.4rem;
+    bottom: 0; }
+  .card .goods-status {
+    color: #646363; }
+
+.social-media {
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .social-media p {
+    color: #4e4c4c;
+    padding-bottom: 1rem; }
+  .social-media .social-media-inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .social-media .social-media-inner i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fbfbfb;
+      width: 40px;
+      height: 40px;
+      font-size: 1.2rem;
+      border-radius: 50%;
+      cursor: pointer; }
+    .social-media .social-media-inner .facebook {
+      background: rgba(80, 96, 152, 0.9);
+      transition: all 0.3s; }
+    .social-media .social-media-inner .facebook:hover {
+      background: #506098; }
+    .social-media .social-media-inner .twitter {
+      background: rgba(118, 201, 253, 0.9);
+      transition: all 0.3s; }
+    .social-media .social-media-inner .twitter:hover {
+      background: #76c9fd; }
+    .social-media .social-media-inner .youtube {
+      background: rgba(233, 0, 0, 0.9);
+      transition: all 0.3s; }
+    .social-media .social-media-inner .youtube:hover {
+      background: #e90000; }
+    .social-media .social-media-inner .instagram {
+      background: linear-gradient(45deg, rgba(255, 183, 0, 0.9) 14.65%, rgba(255, 104, 0, 0.9) 31.68%, rgba(203, 33, 125, 0.9) 54.72%, rgba(126, 0, 170, 0.9) 85.35%);
+      transition: all 0.3s; }
+    .social-media .social-media-inner .instagram:hover {
+      background: linear-gradient(45deg, #ffb700 14.65%, #ff6800 31.68%, #cb217d 54.72%, #7e00aa 85.35%); }
+    .social-media .social-media-inner .viber {
+      transition: all 0.3s;
+      background: rgba(125, 61, 175, 0.9); }
+    .social-media .social-media-inner .viber:hover {
+      background: #7d3daf; }
+    .social-media .social-media-inner .telegram {
+      transition: all 0.3s;
+      background: rgba(0, 136, 204, 0.9); }
+    .social-media .social-media-inner .telegram:hover {
+      background: #0088cc; }
+
+.sidebar-list {
+  border-bottom: 1px solid #afd9ea;
+  list-style: none;
+  padding: 2rem 0 2rem 0rem; }
+  .sidebar-list li {
+    font-size: 0.9rem;
+    line-height: 2rem;
+    color: #3e77aa; }
+  .sidebar-list li:hover {
+    cursor: pointer;
+    color: #f7350e;
+    text-decoration: underline; }
+  .sidebar-list i {
+    text-decoration: none;
+    text-align: center;
+    width: 3rem;
+    font-size: 1.2rem;
+    color: #adb8c8; }
+
+.border-bottom {
+  border-bottom: 1px solid #afd9ea; }
+
+.blank_card {
+  background-color: white;
+  width: 100%;
+  height: 100%; }
+
 .btn {
   border: none;
   border-radius: 5px;
@@ -161,45 +275,6 @@ a {
 .non-displayable {
   display: none !important; }
 
-.card {
-  border-bottom: 1px solid rgba(175, 217, 234, 0.5);
-  border-right: 1px solid rgba(175, 217, 234, 0.5);
-  display: flex;
-  flex-direction: column;
-  padding: 0.5rem; }
-  .card .heart-icon {
-    text-align: right;
-    height: 20px; }
-    .card .heart-icon i {
-      color: #ffa900;
-      font-size: 1.5rem;
-      cursor: pointer; }
-  .card .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px; }
-    .card .image-container img {
-      max-height: 150px;
-      cursor: pointer; }
-  .card .goods-name {
-    cursor: pointer; }
-  .card .goods-prev-price {
-    height: 13px;
-    margin: 0.5rem 0;
-    text-decoration: line-through;
-    color: #646363; }
-  .card .goods-current-price {
-    font-size: 1.4rem;
-    bottom: 0; }
-  .card .goods-status {
-    color: #646363; }
-
-.blank_card {
-  background-color: white;
-  width: 100%;
-  height: 100%; }
-
 .text-middle {
   font-size: 0.9rem; }
 
@@ -220,81 +295,6 @@ a {
 
 .width-90 {
   width: 90%; }
-
-.border-bottom {
-  border-bottom: 1px solid #afd9ea; }
-
-.social-media {
-  padding: 1.5rem 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-  .social-media p {
-    color: #4e4c4c;
-    padding-bottom: 1rem; }
-  .social-media .social-media-inner {
-    display: flex;
-    justify-content: space-around;
-    align-items: center; }
-    .social-media .social-media-inner i {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #fbfbfb;
-      width: 40px;
-      height: 40px;
-      font-size: 1.2rem;
-      border-radius: 50%;
-      cursor: pointer; }
-    .social-media .social-media-inner .facebook {
-      background: rgba(80, 96, 152, 0.9);
-      transition: all 0.3s; }
-    .social-media .social-media-inner .facebook:hover {
-      background: #506098; }
-    .social-media .social-media-inner .twitter {
-      background: rgba(118, 201, 253, 0.9);
-      transition: all 0.3s; }
-    .social-media .social-media-inner .twitter:hover {
-      background: #76c9fd; }
-    .social-media .social-media-inner .youtube {
-      background: rgba(233, 0, 0, 0.9);
-      transition: all 0.3s; }
-    .social-media .social-media-inner .youtube:hover {
-      background: #e90000; }
-    .social-media .social-media-inner .instagram {
-      background: linear-gradient(45deg, rgba(255, 183, 0, 0.9) 14.65%, rgba(255, 104, 0, 0.9) 31.68%, rgba(203, 33, 125, 0.9) 54.72%, rgba(126, 0, 170, 0.9) 85.35%);
-      transition: all 0.3s; }
-    .social-media .social-media-inner .instagram:hover {
-      background: linear-gradient(45deg, #ffb700 14.65%, #ff6800 31.68%, #cb217d 54.72%, #7e00aa 85.35%); }
-    .social-media .social-media-inner .viber {
-      transition: all 0.3s;
-      background: rgba(125, 61, 175, 0.9); }
-    .social-media .social-media-inner .viber:hover {
-      background: #7d3daf; }
-    .social-media .social-media-inner .telegram {
-      transition: all 0.3s;
-      background: rgba(0, 136, 204, 0.9); }
-    .social-media .social-media-inner .telegram:hover {
-      background: #0088cc; }
-
-.sidebar-list {
-  border-bottom: 1px solid #afd9ea;
-  list-style: none;
-  padding: 2rem 0 2rem 0rem; }
-  .sidebar-list li {
-    font-size: 0.9rem;
-    line-height: 2rem;
-    color: #3e77aa; }
-  .sidebar-list li:hover {
-    cursor: pointer;
-    color: #f7350e;
-    text-decoration: underline; }
-  .sidebar-list i {
-    text-decoration: none;
-    text-align: center;
-    width: 3rem;
-    font-size: 1.2rem;
-    color: #adb8c8; }
 
 header {
   z-index: 100;
