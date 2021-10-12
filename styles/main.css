@@ -263,6 +263,12 @@ a {
   .btn-social-media-login i {
     margin-right: 12px; }
 
+.btn-pop-up-window {
+  background: #00a046;
+  color: #fbfbfb;
+  width: 130px;
+  height: 40px; }
+
 .i-1x {
   font-size: 1.5rem; }
 
@@ -874,3 +880,27 @@ body {
   main .promotions-wrapper {
     width: 90%;
     margin: 1rem auto; } }
+
+.pop-up {
+  z-index: 150;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 400px;
+  height: 300px;
+  background: red;
+  border-radius: 11px;
+  cursor: pointer; }
+  .pop-up img {
+    border-radius: 11px;
+    width: 100%;
+    height: 100%; }
+  .pop-up i {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: #fbfbfb; }
+  .pop-up button {
+    position: absolute;
+    bottom: 24px;
+    right: 24px; }

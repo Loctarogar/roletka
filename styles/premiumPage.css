@@ -263,6 +263,12 @@ a {
   .btn-social-media-login i {
     margin-right: 12px; }
 
+.btn-pop-up-window {
+  background: #00a046;
+  color: #fbfbfb;
+  width: 130px;
+  height: 40px; }
+
 .i-1x {
   font-size: 1.5rem; }
 
