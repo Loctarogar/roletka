@@ -267,7 +267,8 @@ a {
   background: #00a046;
   color: #fbfbfb;
   width: 130px;
-  height: 40px; }
+  height: 40px;
+  cursor: pointer; }
 
 .i-1x {
   font-size: 1.5rem; }
@@ -885,12 +886,13 @@ body {
   z-index: 150;
   position: fixed;
   bottom: 24px;
-  right: 24px;
+  right: -424px;
   width: 400px;
   height: 300px;
   background: red;
   border-radius: 11px;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all 1s; }
   .pop-up img {
     border-radius: 11px;
     width: 100%;
@@ -900,6 +902,8 @@ body {
     top: 8px;
     right: 8px;
     color: #fbfbfb; }
+  .pop-up i:hover {
+    color: #f7350e; }
   .pop-up button {
     position: absolute;
     bottom: 24px;
