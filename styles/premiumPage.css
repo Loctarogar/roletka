@@ -824,3 +824,47 @@ body {
   main .promotions-wrapper {
     width: 90%;
     margin: 1rem auto; } }
+
+.footer {
+  display: grid;
+  grid-template-areas: "adds adds adds adds adds" "social-media about-us footer-info footer-services footer-partners" "info info info info info "; }
+  .footer .adds {
+    grid-area: adds;
+    height: 20px;
+    background: green; }
+  .footer .social-media {
+    grid-area: social-media;
+    height: 20px;
+    background: green; }
+  .footer .about-us {
+    grid-area: footer-info;
+    height: 20px;
+    background: green; }
+  .footer .footer-info {
+    grid-area: footer-services;
+    height: 20px;
+    background: green; }
+  .footer .footer-services {
+    grid-area: footer-partners;
+    height: 20px;
+    background: green; }
+  .footer .footer-partners {
+    grid-area: footer;
+    height: 20px;
+    background: green; }
+  .footer .info {
+    grid-area: adds;
+    height: 20px;
+    background: green; }
+
+.main-body-premium .premium-hero {
+  position: relative; }
+  .main-body-premium .premium-hero .hero-image {
+    position: relative;
+    height: 510px;
+    background: url("../img/premium_page/premium-landing-hero.jpg") no-repeat center right/cover;
+    border-bottom: solid 46px #471a7b; }
+  .main-body-premium .premium-hero .premium-hero-text {
+    position: absolute;
+    background: chartreuse;
+    top: 10px; }
