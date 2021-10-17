@@ -858,13 +858,17 @@ body {
     background: green; }
 
 .main-body-premium .premium-hero {
-  position: relative; }
+  position: relative;
+  height: 510px; }
   .main-body-premium .premium-hero .hero-image {
-    position: relative;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 510px;
+    width: 100%;
     background: url("../img/premium_page/premium-landing-hero.jpg") no-repeat center right/cover;
     border-bottom: solid 46px #471a7b; }
   .main-body-premium .premium-hero .premium-hero-text {
-    position: absolute;
-    background: chartreuse;
-    top: 10px; }
+    position: relative;
+    background: chartreuse; }
