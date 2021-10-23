@@ -270,6 +270,15 @@ a {
   height: 40px;
   cursor: pointer; }
 
+.btn-choose-premium {
+  font-size: 1rem;
+  padding: 0.5rem;
+  background: #00a046;
+  color: #fbfbfb; }
+
+.btn-choose-premium:hover {
+  background: #06bd55; }
+
 .i-1x {
   font-size: 1.5rem; }
 
