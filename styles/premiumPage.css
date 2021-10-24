@@ -964,12 +964,37 @@ body {
         text-align: center; }
 
 .main-body-premium .premium-advantages {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center; }
   .main-body-premium .premium-advantages .premium-advantages-dropdown {
+    position: relative;
+    overflow: hidden;
+    margin: 0.5rem 0;
     width: 800px;
-    height: 70px;
-    background: #fbfbfb; }
+    height: 150px;
+    background: #fbfbfb;
+    display: flex; }
+    .main-body-premium .premium-advantages .premium-advantages-dropdown .premium-advantages-dropdown-inner-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .main-body-premium .premium-advantages .premium-advantages-dropdown .premium-advantages-dropdown-inner-container .big-icon {
+        font-size: 4rem;
+        margin: 1.5rem; }
+      .main-body-premium .premium-advantages .premium-advantages-dropdown .premium-advantages-dropdown-inner-container .fa-chevron-up,
+      .main-body-premium .premium-advantages .premium-advantages-dropdown .premium-advantages-dropdown-inner-container .fa-chevron-down {
+        position: absolute;
+        top: 1rem;
+        right: 1rem; }
+      .main-body-premium .premium-advantages .premium-advantages-dropdown .premium-advantages-dropdown-inner-container .inner-text {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly; }
     .main-body-premium .premium-advantages .premium-advantages-dropdown i {
       color: #471a7b; }
